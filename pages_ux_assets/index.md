@@ -22,4 +22,4 @@ To produce the Screens pages of this site, the prototype was split into smaller 
 * Also included is a single Axure file that combines the smaller files
 
 [1]: http://share.axure.com "Go to AxShare"
-[2]: {{ site.baseurl }}/ux_assets/axure_AroundUX.zip "Download zip file"
+[2]: {{ site.baseurl }}/pages_ux_assets/axure_AroundUX.zip "Download zip file"
