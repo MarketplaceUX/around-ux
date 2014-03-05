@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: basic_content
 title: UX Recommendations for Around application
 category: home
 --- 
