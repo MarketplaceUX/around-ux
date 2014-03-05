@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width">
+
+<!-- syntax highlighting CSS -->
+<link rel="stylesheet" href="/css/syntax.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://github.com/ezoehunt/around-ux" title="Go to the main Github page for this site">view on <i style="font-size:100%;" class="fa fa-github"></i> Github</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li {% if page.category == 'home' %}class="active"{% endif %}><a href="/" title="Go to home page of this site">Home</a></li>
+                <li {% if page.category == 'design' %}class="active"{% endif %}><a href="/design" title="See design principles">Design Principles</a></li>
+                <li {% if page.category == 'screens' %}class="active"{% endif %}><a href="/screens" title="See screens">Screens</a></li>
+                <li {% if page.category == 'assets' %}class="active"{% endif %}><a href="/ux_assets" title="See UX assets">UX Assets</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="special" href="https://github.com/mozilla/around" title="Go to Mozilla's project on Github">see the Around application</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div>
+</div>
+

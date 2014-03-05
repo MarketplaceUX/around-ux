@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: UX Recommendations for Around application
 markdown: redcarpet
 pygments: true
+baseurl: /around-ux
