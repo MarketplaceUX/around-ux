@@ -19,7 +19,6 @@ To produce the Screens pages of this site, the prototype was split into smaller 
 * View a Checkin
 * View a Place
 * View a Profile
-* Also included is a single Axure file that combines the smaller files
 
 [1]: http://share.axure.com "Go to AxShare"
-[2]: {{ site.baseurl }}/pages_ux_assets/axure_AroundUX.zip "Download zip file"
+[2]: ../pages_ux_assets/axure_AroundUX.zip "Download zip file"

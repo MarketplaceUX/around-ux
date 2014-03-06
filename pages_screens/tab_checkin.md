@@ -10,23 +10,30 @@ img: tab_checkin.png
 ---
 
 ###Checkin
-* <span class="proto-color">Click map pin icon in bottom tab bar. Click close at any time to close panel.</span>
-* This is the primary method by which the app user checksin to Places (secondary method is checking in via View Place).
+* Choose Location starts the checkin flow.
+
+* *Click map pin icon in bottom tab bar. The Close button is active here.*
 
 
 ### Choose Location
-* <span class="proto-color">Start flow by clicking map icon in bottom tab bar</span>
-* Shows rows for Places around the user's current location. Each row links to Add Comment.
+* Shows rows for Places around the user's current location. Each row links to **Add Comment**.
+
 * User can also search for a Place. This would open keyboard to enter address or name. After entering text, user is returned to this tab/screen showing showing results. Should work like Search does from Explore Nearby tab on Home Screen. 
-* Does this address the slow geo-location, or do we need something more substantial for this sample app?
+
+* *<em>See [question][1] about slow GPS</em>*.
 
 
 ### Add Comment
-* <span class="proto-color">Click top Place row on Choose Location. Click back arrow to return to previous screen.</span>
-* User can check-in without adding a comment. <span class="proto-color">Click Check-in button without clicking into input field to see this.</span>
-* Or user can add a comment to the checkin. <span class="proto-color">Click input field to see keyboard; then click Check-in button to see this.</span>
+* *Click top Place row on Choose Location. The back arrow is active to return you to previous screen.*
+
+* User can check-in without adding a comment. *Click Check-in button without clicking into input field to see this.*
+
+* Or user can add a comment to the checkin. *Click input field to see keyboard; then click Check-in button to see this interaction.*
 
 
 ### Completed
-* <span class="proto-color">Click Check-in button on Add Comment</span>
 * Shows Points and Badge (if any) earned for this checkin.
+
+* *Click Close to close the panel.*
+
+[1]: ../pages_issues/index.html "Go to question"

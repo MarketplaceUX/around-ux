@@ -34,7 +34,7 @@
 
 html {
   height: 100%;
-  font-size: 62.5%; /* Setting base font to 10px and define all your units in rem. 1rem = 10px */
+  font-size: 62.5%; /* Set base font to 10px and define all your units in rem. 1rem = 10px */
 }
 
 body {
@@ -47,8 +47,7 @@ body {
   padding-top: 70px; /* compensate for bootstrap's fixed navbar height */
 }
 
-
-/* Reset for me */
+/* Reset some markdown */
 h1 {
   font-family: 'FiraSansMed', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #444;
@@ -87,13 +86,36 @@ blockquote p {
   padding-left: 0;
 }
 
-a,
+/* Use some em styles to quickly color markdown content */
+/* 
+Resetting normal em to use for purple notes, 
+so if you need to use em italic, do *<i>...</i>*  
+*/
+em {
+  color: #8e44ad;
+  font-style: normal;
+}
+/* 
+Create new em style for red questions
+use it this way *<em>...</em>*  
+*/
+em em {
+  color: #e74c3c;
+  font-style: normal;
+}
+
+a, a:active {
+  color: #2980b9;
+}
 a:visited { 
-  color: #2980b9; 
+  color: #3498db;
+  text-decoration: none;
 }
 a:hover { 
   color: #d35400; 
+  text-decoration: none;
 }
+
 a.btn {
   color: #fff;
 }
@@ -111,19 +133,12 @@ a.btn:hover {
 /* Navbar */
 .navbar .container {
   width: 100%;
-  border-bottom: 1px solid #fff;
-}
-.navbar-default .navbar-collapse {
-  border: none;
-  box-shadow: none;
+  border-bottom: 2px solid #ebebeb;
 }
 .navbar-default {
   background-color: #bdc3c7;
   border: none !important;
-}
-.nav>li>a {
-  padding-left: 30px;
-  padding-right: 30px;
+  box-shadow: none;
 }
 .navbar-nav>li {
   font-size: 95%;
@@ -131,31 +146,45 @@ a.btn:hover {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.navbar-default .navbar-nav>li>a {
+.nav>li>a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-right > li > a {
   color: #fff;
 }
-.navbar-default .navbar-nav>li.active>a {
-  background-color: #e74c3c;
+.navbar-default .navbar-nav > li.active > a {
+  background-color: #e74c3c; /*#95a5a6*/
   color: #fff;
 }
-.navbar-right>li {
-  text-transform: none;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a:hover {
+  background-color: #ecf0f1; /*ecf0f1;*/
+  color: #e74c3c;
+}
+
+.navbar-right > li > a {
+  background-color: #444; /*e74c3c*/
+  text-transform: none !important;
   border-left: 1px solid #fff;
-  background-color: #e74c3c;
 }
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li.active>a:hover,
-.navbar-default .navbar-brand:hover,
-.navbar-right li a:hover {
-    background-color: #ecf0f1; /*#e74c3c;*/
-    color: #e74c3c;
+.navbar-right > li > a:hover {
+  background-color: #ecf0f1 !important;
+  color: #e74c3c !important;
 }
+
+
 .navbar-default .navbar-brand {
   color: #fff;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #e74c3c; /*#f39c12;*/
+  background-color: #444; /*#95a5a6;*/
   border-right: 1px solid #fff;
+}
+.navbar-default .navbar-brand:hover {
+  background-color: #ecf0f1;
+  color: #e74c3c;
 }
 
 /* Buttons */
@@ -225,6 +254,7 @@ a.btn:hover {
   color: #666;
   text-shadow: none;
   border-radius: 0;
+  border-bottom: none;
 }
 .nav>li>a:hover, 
 .nav>li>a:focus {
@@ -254,27 +284,18 @@ a.btn:hover {
 .container {
   width:100%;
 }
+.content-screens { }
 .sidebar-module {
-  background-color: #ecf0f1;
   padding: 0;
-  margin-top: 24px;
-  /*padding: 2rem 2rem 0 2rem;*/
 }
-.content-screens { /* adds padding between sidebar and main content */
-  padding-left: 5rem;
+.sidebar-inner {
+  background-color: #ecf0f1;
 }
-.screens-mobile {
+.screens-mobile { }
+
+.screen-txt h3:first-child{
   margin-top: 3rem;
 }
-.proto-interactive {
-  font-family: 'FiraSans',Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  color: #8e44ad;
-}
-.proto-color {
-  color: #8e44ad;
-}
-
 
 
 /*****************************************************************************/
@@ -292,16 +313,45 @@ a.btn:hover {
 }
 
 
-
 /*****************************************************************************/
 /*
 /* Media Queries
 /*
 /*****************************************************************************/
+/* Mobile devices */
+@media(max-width: 767px) { 
+  .sidebar-inner {
+    position: relative;
+    width: 100%;
+  }
+}
+
+
 /* Small devices (tablets, 768px and up) */
 @media(min-width: 768px) { 
   .main-container {
     min-height: 600px;
+  }
+  .sidebar-row{
+    padding: 0 5% 0 5%;
+  }
+  .base-row {
+    padding: 0 20% 0 20%;
+  }
+  .sidebar-inner {
+    width:20%;
+    margin-top: 2.5rem;
+  }
+  .content-screens { 
+    float:right;
+    width:75%;
+    padding-left: 4rem;
+  }
+  .proto-row {
+    margin-top: 3rem;
+  }
+  .right-col-padding {
+    padding-right: 8rem;
   }
 }
 

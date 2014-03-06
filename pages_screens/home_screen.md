@@ -11,38 +11,50 @@ img: home_screen.png
 
 
 ### All Tabs 
+* *Click tabs to view their content.*
 
-* <span class="proto-color">Click tabs to view their content</span>
 * Refresh icon refreshes the content in current view.
 
 
 ### Friends Near Me Tab
+* Shows a list of friend check-ins near me.
 
-* Shows list of friend check-ins near me.
-* Profile icon links to View Profile.
-* Right arrow links to View Checkin.
+* Profile icon links to [View Profile][1].
+
+* Right arrow links to [View Checkin][2].
 
 
 ### Friends Worldwide Tab
+* Shows a list of friend check-ins worldwide.
 
-* Shows list of friend check-ins worldwide.
-* Same interaction as Friends Near Me.
+* Same content and interaction as for the Friends Near Me tab.
 
 
 ### Explore Nearby Tab 
+* Shows a list of places near me. Also lets users search for locations.
 
-* <span class="proto-color">Click search input to see results.</span>
-* Shows list of places near me.
-* Each row links to View Place.
+* Each row links to [View Place][3].
+
+* *Click search input to see Explore Nearby Map.*
+
+* *Click search input field to see Search Results.*
 
 
-### View Explore Nearby Map 
+### Explore Nearby Map 
+* Shows the locations represented on the Explore Nearby screen on a larger map. 
 
-* <span class="proto-color">Click map image on Explore Nearby screen. Click back arrow to return to previous screen.</span>
-* Map pins link to View Place. 
+* Map pins link to [View Place][3]. 
+
+* *Click the map image on the Explore Nearby tab. The back arrow is active to return you to previous screen.*
 
 
 ### Search Results 
-* <span class="proto-color">Click input field on Explore Nearby screen. Click back arrow to return to previous screen.</span>
-* Show results in same format as Explore Nearby content.
-* Can search again from this screen to refresh view with more search results.
+* *Click the search input field on the Explore Nearby tab. Both "results found" and "no results found" scenarios are available. The back arrow is active to return you to previous screen.*
+
+* Results are displayed in same format as Explore Nearby content.
+
+* User can search again from this screen to refresh the view with more search results.
+
+[1]: view_profile.html "Go to View Profile"
+[2]: view_checkin.html "Go to View Checkin"
+[3]: view_place.html "Go to View Place"

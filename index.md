@@ -5,8 +5,7 @@ category: home
 --- 
 
 # Overview
-
-The Around application is an HTML5 Foursquare client from [Mozilla][1]. 
+The [Around application][3] is an HTML5 Foursquare client from [Mozilla][1]. 
 
 It's designed to illustrate key features of developing Open Web Apps and will serve as a reference application for the [Mozilla Developer Network][2]. In particular, the Around application is a good example of an app that uses geo-location, takes advantage of offline storage, and interacts with a 3rd-party API.
 
@@ -27,5 +26,6 @@ This site contains recommendations from the Mozilla Marketplace UX team for desi
 * Include notifications in the app
 * Allow user to input her location if GPS is slow
 
-[1]: http://mozilla.come "Go to Mozilla"
+[1]: http://mozilla.com "Go to Mozilla"
 [2]: https://developer.mozilla.org "Go to the Mozilla Developer Network"
+[3]: https://github.com/mozilla/around "Go to the Around application on Github"
