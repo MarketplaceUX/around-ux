@@ -36,6 +36,11 @@ Should we represent the Upload Photo functionality? I'm happy to leave it out. I
 
 * On [View Place][2]
 
+### Outstanding Items
+* Better errors - let's talk about what this means for UX.
+
+* OpenStreetMaps attribution - anything further to do on this?
+
 
 [1]: ../pages_screens/view_checkin.html "Go to View Checkin"
 [2]: ../pages_screens/view_place.html "Go to View Place"
