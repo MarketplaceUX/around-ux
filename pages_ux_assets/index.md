@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: basic_content
 title: UX Assets
 category: assets
 ---
